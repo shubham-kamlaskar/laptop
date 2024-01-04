@@ -26,7 +26,7 @@ def pred():
         except Exception as e:
             prediction =e
 
-    return render_template("laptop.html",Price=prediction)
+    return render_template("laptop.html",Price=str(prediction))
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0",port=8080)
