@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center ;">
+    <h2> Laptop Price Prediction</h2>
+    <form action="/price" method="POST">
+
+
+        <p> Laptop Brand : <select name="Company"> Brand
+            <option name="Apple"> Apple </option>
+            <option name="Acer"> Acer </option>
+            <option name="Asus"> Asus </option>
+            <option name="Chuwi"> Chuwi </option>
+            <option name="Dell"> Dell </option>
+            <option name="Fujistsu"> Fujistsu </option>
+            <option name="Google"> Google </option>
+            <option name="HP"> HP </option>
+            <option name="Huawei"> Huawei </option>
+            <option name="LG"> LG </option>
+            <option name="Lenovo"> Lenovo </option>
+            <option name="MSI"> MSI </option>
+            <option name="Mediacom"> Mediacom </option>
+            <option name="Microsoft"> Microsoft </option>
+            <option name="Razer"> Razer </option>
+            <option name="Samsung"> Samsung </option>
+            <option name="Toshiba"> Toshiba </option>
+            <option name="Vero"> Vero </option>
+            <option name="Xiaomi"> Xiaomi </option>
+                  
+        </select></p>
+
+
+        <p> Type : <select name="TypeName"> Type
+            <option name="Ultrabook"> Ultrabook </option>
+            <option name='Notebook'> Notebook </option>
+            <option name='Gaming'> Gaming </option>
+            <option name='2 in 1 Convertible'> 2 in 1 Convertible</option>
+            <option name='Workstation'> Workstation</option>
+
+        </select></p>
+
+
+        <p> Inches : <input type="text" name="Inches" placeholder="min:10.1 to max:18.4"></p>
+
+
+        <p> Ram : <input type="text" name="Ram" placeholder="min:2 to max:64"> </p>
+
+
+        <p> Operating System :<select name="OpSys"> Type
+            <option name="macOS"> macOS </option>
+            <option name='No OS'> No OS </option>
+            <option name='Windows 10'> Windows 10 </option>
+            <option name='Mac OS X'> Mac OS X</option>
+            <option name='Linux'> Linux</option>
+            <option name='Android'> Android</option>
+            <option name='Windows 10 S'> Windows 10 S</option>
+            <option name='Chrome OS'> Chrome OS</option>
+            <option name='Windows 7'> Windows 7</option>
+            
+        </select></p>
+        <!-- <p> CPU Brand :<select name="cpu"> cpu
+            <option name="Intel"> Intel </option>
+            <option name='AMD'> AMD </option>
+            <option name=''> Samsung </option>
+        </select></p> -->
+        <p> <input type="submit"> </p>
+    </form>
+    <p> Predicted Price is : {{Price}} </p>
+</body>
+
+
+
+</html>
